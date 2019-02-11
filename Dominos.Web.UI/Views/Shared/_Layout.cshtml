@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dominos Pizza</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+    <link href="http://cdn.rawgit.com/davidstutz/bootstrap-multiselect/master/dist/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/jquery-3.0.0.min.js"></script>
+    <link href="~/Content/noty.css" rel="stylesheet" />
+    <script src="~/Scripts/noty.min.js"></script>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body style="background-color:lightgray">
+
+    @RenderBody()
+
+    <div id="Loading" style="display:none;">
+        <div class="loader"></div>
+    </div>
+    <div class="container" id="alertDiv">
+        <div class="slide-alert alert" style="margin-top:20px;display:none" id="alertHtml">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close" onclick="refresh()">&times;</a>
+            <p></p>
+        </div>
+    </div>
+
+    <div class="container" id="alertDiv1">
+
+    </div>
+</body>
+</html>
+
+
+
+
